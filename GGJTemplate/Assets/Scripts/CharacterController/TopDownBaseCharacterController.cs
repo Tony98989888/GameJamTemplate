@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class TopDownBaseCharacterController : MonoBehaviour
@@ -7,7 +9,9 @@ public class TopDownBaseCharacterController : MonoBehaviour
     public bool UsingGravity = false;
     public bool CanMove = false;
 
-    protected virtual void Awake() { }
+    protected virtual void Awake()
+    {
+    }
 
     protected virtual void LateUpdate() { }
     protected virtual void Update() { }
