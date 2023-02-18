@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Serialization;
 using UnityEngine;
 
 public class TopDownBaseCharacterController : MonoBehaviour
@@ -8,6 +9,9 @@ public class TopDownBaseCharacterController : MonoBehaviour
     protected Vector2 m_impactForce;
     public bool UsingGravity = false;
     public bool CanMove = false;
+
+    InputManager m_inputManager;
+    public InputManager CharInputManager => m_inputManager;
 
     protected virtual void Awake()
     {

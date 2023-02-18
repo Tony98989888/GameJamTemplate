@@ -35,6 +35,7 @@ public class CharacterLogic : MonoBehaviour
 
     protected virtual void InitializeAnimator()
     {
+
         if (m_animator == null)
         {
             m_animator = GetComponent<Animator>();
