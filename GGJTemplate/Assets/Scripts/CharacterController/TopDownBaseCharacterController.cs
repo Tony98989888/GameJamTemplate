@@ -5,11 +5,13 @@ using UnityEngine;
 
 public class TopDownBaseCharacterController : MonoBehaviour
 {
+    // Drives player movement
     public Vector2 CurrentMoveVelocity;
     protected Vector2 m_impactForce;
     public bool UsingGravity = false;
     public bool CanMove = false;
 
+    [SerializeField]
     InputManager m_inputManager;
     public InputManager CharInputManager => m_inputManager;
 
@@ -29,4 +31,7 @@ public class TopDownBaseCharacterController : MonoBehaviour
         UsingGravity = false;
         CanMove = false;
     }
+
+    // We change object movements by changing velocity of rigidbody
+    public virtual void SetMovement(Vector2 velocity) { }
 }

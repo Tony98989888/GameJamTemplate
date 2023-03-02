@@ -34,4 +34,9 @@ public class TopDownCharacterController : TopDownBaseCharacterController
         m_rb2d.velocity = CurrentMoveVelocity;
     }
 
+    public override void SetMovement(Vector2 velocity)
+    {
+        base.SetMovement(velocity);
+        CurrentMoveVelocity = velocity;
+    }
 }

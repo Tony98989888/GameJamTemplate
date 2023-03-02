@@ -26,6 +26,7 @@ public class CharacterLogic : MonoBehaviour
     protected virtual void Initialize()
     {
         InitializeAnimator();
+        AcquireAllAbilities();
     }
 
     protected virtual void AcquireAllAbilities()
